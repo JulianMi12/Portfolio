@@ -1,0 +1,103 @@
+.container {
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #412657;
+}
+
+.projects {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 33rem;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.card {
+    background-color: #290941;
+    border: 1px solid #f4ba5c;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #b5b5b5;
+    min-height: 41px;
+}
+
+ul {
+    display: grid;
+    margin-top: 10px;
+    gap: 1rem;
+    grid-auto-rows: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    display: block;
+    height: 1.7rem;
+}
+
+.cardbuttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cardBut1 {
+    font-size: 15px;
+    font-weight: bold;
+    width: 145px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #f4ba5c;
+    color: #290941;
+    transition: all 0.3s ease; 
+    border: none;  
+    cursor: pointer;
+}
+
+.cardBut1:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #f4ba5c;
+}
+
+.cardBut2{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #290941;
+    color: #fff;
+    transition: all 0.3s ease; 
+    border: 2px solid #f4ba5c; 
+    cursor: pointer;
+}
+
+.cardBut2:hover {
+    color: #290941;
+    background-color: #f4ba5c;
+}
