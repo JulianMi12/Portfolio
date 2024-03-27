@@ -1,6 +1,5 @@
 .container {
     width: 100%;
-    padding: 50px 100px;
 }
 
 .skills {
@@ -52,10 +51,4 @@ ul li a:hover {
 
 img {
     height: 1.5rem;
-}
-
-@media only screen and (max-width: 650px) {
-    .container {
-        padding: 50px 50px;
-    }
 }

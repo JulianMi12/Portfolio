@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    background-color: #412657;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 2px;
+    height: 100%;
+    background-color: #f4ba5c;
+}
+
+.timeline-item::before {
+    content: attr(data-date);
+    position: absolute;
+    top: 0;
+    left: -110px;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: #f4ba5c;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: #290941;
+    padding: 20px;
+    border-radius: 8px;
+}
