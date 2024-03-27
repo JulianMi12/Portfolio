@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ExperienceComponent } from "./experience/experience.component";
+import { FormationComponent } from "./formation/formation.component";
 
 @Component({
     selector: 'app-root',
@@ -18,7 +19,7 @@ import { ExperienceComponent } from "./experience/experience.component";
     ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavBarComponent, HttpClientModule, HeadComponent, AboutComponent, SkillsComponent, ProjectsComponent, ExperienceComponent]
+    imports: [RouterOutlet, NavBarComponent, HttpClientModule, HeadComponent, AboutComponent, SkillsComponent, ProjectsComponent, ExperienceComponent, FormationComponent]
 })
 export class AppComponent implements OnInit {
   public tags: Tag[];
