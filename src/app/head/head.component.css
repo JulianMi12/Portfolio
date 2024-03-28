@@ -13,8 +13,14 @@
 }
 
 img {
-    width: 300px;
-    border-radius: 100px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25%;
+    margin-top: 20px;
+}
+
+.desc {
+    margin-bottom: 20px;
 }
 
 .buttons {
@@ -33,8 +39,8 @@ img {
     border-radius: 30px;
     background-color: #f4ba5c;
     color: #290941;
-    transition: all 0.3s ease; 
-    border: none;  
+    transition: all 0.3s ease;
+    border: none;
     cursor: pointer;
     text-decoration: none;
 }
@@ -53,7 +59,7 @@ img {
     border-radius: 30px;
     color: #f4ba5c;
     background-color: transparent;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     border: 2px solid #f4ba5c;
     cursor: pointer;
 }
@@ -62,4 +68,76 @@ img {
     background-color: #f4ba5c;
     color: #290941;
     border: none;
+}
+
+.t1 {
+    display: flex;
+    font-size: 50px;
+}
+
+.t2 {
+    display: flex;
+    font-size: 80px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .buttons {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .buttons {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        margin-top: 0px;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .t1 {
+        display: flex;
+        font-size: 40px;
+    }
+
+    .t2 {
+        display: flex;
+        font-size: 70px;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .t1 {
+        display: flex;
+        font-size: 30px;
+    }
+    
+    .t2 {
+        display: flex;
+        font-size: 60px;
+    }
+
+    .t3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    img {
+        display: none;
+    }
+
+    .buttons {
+        width: 95%;
+    }
 }
