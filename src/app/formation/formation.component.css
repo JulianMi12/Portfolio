@@ -13,30 +13,19 @@
     margin-bottom: 40px;
 }
 
-.timeline-item::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -80px;
-    width: 2px;
-    height: 100%;
-    background-color: #f4ba5c;
-}
-
-.timeline-item::before {
-    content: attr(data-date);
-    position: absolute;
-    top: 0;
-    left: -110px;
-    width: 100px;
-    text-align: right;
-    font-weight: bold;
-    color: #f4ba5c;
-    z-index: 1;
-}
-
 .timeline-content {
     background-color: #290941;
     padding: 20px;
     border-radius: 8px;
+}
+
+.title-exp {
+    color: #f4ba5c;
+}
+
+@media only screen and (max-width: 400px) {
+    .spec {
+        flex-direction: column; 
+        text-align: center;
+    }
 }

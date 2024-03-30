@@ -4,10 +4,12 @@
 }
 
 .projects {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
-    grid-auto-rows: 33rem;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    padding: 0 1rem;
 }
 
 .card {
@@ -16,7 +18,8 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .card-img {
@@ -62,6 +65,7 @@ ul li img {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-direction: row;
 }
 
 .cardBut1 {
@@ -72,8 +76,8 @@ ul li img {
     border-radius: 30px;
     background-color: #f4ba5c;
     color: #290941;
-    transition: all 0.3s ease; 
-    border: none;  
+    transition: all 0.3s ease;
+    border: none;
     cursor: pointer;
 }
 
@@ -83,7 +87,7 @@ ul li img {
     border: 2px solid #f4ba5c;
 }
 
-.cardBut2{
+.cardBut2 {
     font-size: 15px;
     font-weight: bold;
     width: 100px;
@@ -91,12 +95,41 @@ ul li img {
     border-radius: 30px;
     background-color: #290941;
     color: #fff;
-    transition: all 0.3s ease; 
-    border: 2px solid #f4ba5c; 
+    transition: all 0.3s ease;
+    border: 2px solid #f4ba5c;
     cursor: pointer;
 }
 
 .cardBut2:hover {
     color: #290941;
     background-color: #f4ba5c;
+}
+
+@media only screen and (max-width: 1180px) {
+    .container {
+        padding: 50px 40px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .container {
+        padding: 50px 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .cardbuttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardBut1, .cardBut2 {
+        margin-bottom: 10px;
+    }
 }
