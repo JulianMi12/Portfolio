@@ -11,23 +11,62 @@
     background-color: #412657;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
     margin-bottom: 20px;
     font-size: 1.3rem;
 }
 
+.info {
+    margin: 0px 50px;
+}
+
 ul {
-    display: flex;
+    display: grid;
+    margin-top: 10px;
+    gap: 1rem;
+    grid-auto-rows: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
 }
 
 ul li {
     list-style: none;
-    margin: 20px 10px;
 }
 
 ul li img {
     display: block;
-    
     height: 2rem;
+}
+
+@media only screen and (max-width: 790px) {
+    .info {
+        margin: 0px 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        margin-bottom: 50px;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    img {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .spec {
+        flex-direction: column; 
+        text-align: center;
+    }
 }

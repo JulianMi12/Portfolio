@@ -3,11 +3,19 @@
 }
 
 .skills {
-    display: grid;
+    min-height: 255px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    grid-auto-rows: 15rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
 }
+
+.front-end, .back-end, .databases, .tools {
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem;
+}
+
+
 
 h3 {
     text-align: center;
@@ -51,4 +59,20 @@ ul li a:hover {
 
 img {
     height: 1.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .front-end, .back-end, .databases, .tools {
+        width: calc(100% - 1rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    }
 }
