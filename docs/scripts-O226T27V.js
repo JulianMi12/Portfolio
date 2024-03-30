@@ -1,0 +1,1 @@
+function scroll(){document.querySelectorAll("a[data-scroll]").forEach(t=>{t.addEventListener("click",function(e){e.preventDefault();const o=this.getAttribute("href"),r=document.querySelector(o);window.scrollTo({top:r.offsetTop,behavior:"smooth"})})})}

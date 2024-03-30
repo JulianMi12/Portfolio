@@ -1,0 +1,10 @@
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #f4ba5c;
+    padding: 15px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1000;
+}
