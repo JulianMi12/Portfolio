@@ -166,6 +166,12 @@ nav ul li a:hover:before {
         opacity: 1;
     }
 
+    nav ul li a::selection {
+        #label_check {
+            display: none;
+        }
+    }
+
     header {
         padding: 20px 15px;
     }
